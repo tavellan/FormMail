@@ -1,0 +1,65 @@
+/*
+ * (C) 2015- Tero Avellan
+ * Auranmaan aluetietoverkko Oy
+ * http://www.aumanet.fi
+ */
+
+/* LABEL */
+
+label {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 11px; 
+}
+
+/* RESPONSE */
+
+.responseOK {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;;
+	margin-bottom: 8px;
+	width:305px;
+	height:4em;
+	display: table-cell;
+	border: 1px solid #999;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* BUTTON */
+button {
+	margin-bottom: 8px;
+	width:305px;
+	display:block;
+	border: 1px solid #999;
+	height: 25px;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* INPUT, SELECT */
+input, select {
+	margin-bottom: 8px;
+	width:305px;
+	display:block;
+	border: 1px solid #999;
+	height: 25px;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* TEXTAREA */
+textarea {
+	margin-bottom: 8px;
+	width:300px;
+	height: 4em;
+	display:block;
+	border: 1px solid #999;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}

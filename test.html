@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <META http-equiv="Content-Language" content="fi">
+  <title></title>
+</head> 
+<body>
+  <iframe id="formFrame" frameborder="0"></iframe>
+   <script type="text/javascript">
+      jsonSchema = '{"schema": {'+
+          '"subject": {"type": "string","title": "Aihe","enum": [ "yhteydenotto", "palaute", "muu" ],"required": true},'+
+          '"name": {"type": "string","title": "Nimi","required": true},'+
+          '"email": {"type": "string","title": "Sähköpostiosoite","required": true},'+
+          '"phone": {"type": "string","title": "Puhelin","required": true },'+
+          '"message": {"type": "string","title": "Viesti","required": true },'+
+          '"submit": {"type": "action","title": "Lähetä"}'+
+        '},"form": ['+
+          '{"key":"subject","titleMap": {"yhteydenotto": "Yhteydenottopyyntö","palaute": "Palaute","muu": "Muu viesti"}},'+
+          '{"key":"name","type": "text"},'+
+          '{"key":"email", "type": "text"},'+
+          '{"key":"phone","type": "text"},'+
+          '{"key":"message","type": "textarea"},'+
+          '{"key":"submit","type": "submit"}'+
+        '],"mailconf": {'+
+          '"MIME-Version": "",'+
+          '"Content-type": "text/html",'+
+          '"To": "sulo.surffaaja@aumanet.fi",'+
+          '"From": "noreply@aumanet.fi",'+
+          '"Cc": "",'+
+          '"Bcc": "",'+
+          '"Reply-To": "noreply@aumanet.fi",'+
+          '"Response-OK": "Kiitos yhteydenotosta!",'+
+          '"Response-Error": "",'+
+          '"Subject": "Yhteydenottopyyntö"'+
+        '}}';
+      document.getElementById("formFrame").width = 400;
+      document.getElementById("formFrame").height = 400;
+      document.getElementById("formFrame").src = "https://apache.aumanet.fi/tools/FormMail/?schema="+jsonSchema;
+    </script>
+</body>
+</html>
